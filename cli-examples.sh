@@ -7,20 +7,7 @@
 aws dynamodb scan --table-name UserPosts 
 # Fetch the next itemn --table-name UserPosts
 # Page Size demo: will do 1 API call if you have 3 Items
-aws dynamodb scan --table-name UserPosts 
-
-# Will do 3 API calls if you have 3 Items
-aws dynamodb scan --table-name UserPosts --page-size 1
-
-# Max Item demo:
-aws dynamodb scan --table-name UserPosts --max-item
-
-# Will do 3 API calls if you have 3 Items
-aws dynamodb scan --table-name UserPosts --page-size 1
-
-# Max Item demo:
-aws dynamodb scan --table-name UserPosts --max-item
-aws dynamodb scan --table-name UserPosts --max-items 1
+aws dynamodb e UserPosts --max-items 1
 #!/bin/bash
 
 # Demo Projection Expression
@@ -88,7 +75,20 @@ aws dynamodb scan --table-name UserPosts --page-size 1
 
 # Max Item demo:
 aws dynamodb scan --table-name UserPosts --max-item
+aws dynamodb scan -scan --table-name UserPosts 
+
+# Will do 3 API calls if you have 3 Items
 aws dynamodb scan --table-name UserPosts --page-size 1
+
+# Max Item demo:
+aws dynamodb scan --table-name UserPosts --max-item
+
+# Will do 3 API calls if you have 3 Items
+aws dynamodb scan --table-name UserPosts --page-size 1
+
+# Ma
+aws dynamodb scan --table-name UserPosts --max-item
+aws dynamodb scan --table-nam-table-name UserPosts --page-size 1
 
 # Max Item demo:API call if you have 3 Items
 aws dynamodb scan --table-name UserPosts 
@@ -167,7 +167,20 @@ aws dynamodb scan --table-name UserPosts
 # Will do 3 API calls if you have 3 Items
 aws dynamodb scan --table-name UserPosts --page-size 1
 -name UserPosts --projection-expression "user_id, content"
+scan --table-name UserPosts 
 
+# Will do 3 API calls if you have 3 Items
+aws dynamodb scan --table-name UserPosts --page-size 1
+
+# Max Item demo:
+aws dynamodb scan --table-name UserPosts --max-item
+
+# Will do 3 API calls if you have 3 Items
+aws dynamodb scan --table-name UserPosts --page-size 1
+
+# Ma
+aws dynamodb scan --table-name UserPosts --max-item
+aws dynamodb scan --table-nam
 # Demo Filter Expression
 aws dynamodb scan --table-name UserPosts --filter-expression "user_id = :u" --expression-attribute-values '{ ":u": {"S":"john123"}}'
 
