@@ -71,7 +71,11 @@ aws dynamodb scan --table-name UserPosts --projection-expression "user_id, conte
 aws dynamodb scan --table-name UserPosts --page-size 1
 
 # Max Item demo:
+aws dynamodb scan --table-name UserPosts --ma
 aws dynamodb scan --table-name UserPosts --max-items 1
+#!/bin/bash-name UserPosts --projection-expression "user_id, content"
+
+# Demo Filter Expressionx-items 1
 
 # Fetch the next item
 aws dynamodb s1 API call if you have 3 Items
@@ -120,13 +124,7 @@ aws dynamodb scan --table-name UserPosts --max-items 1
 
 # Fetch the next item
 
-# Will do 3 API calls if you have 3 Items
-aws dynamodb scan --table-name UserPosts --page-size 1
-
-# Max Item demo:
-aws dynamodb scan --table-name UserPosts --max-items 1
-
-# Fetch the next item
+# Fetch the next itemn --table-name UserPosts
 # Page Size demo: will do 1 API call if you have 3 Items
 aws dynamodb scan --table-name UserPosts 
 
@@ -134,6 +132,7 @@ aws dynamodb scan --table-name UserPosts
 aws dynamodb scan --table-name UserPosts --page-size 1
 
 # Max Item demo:
+aws dynamodb scan --table-name UserPosts --max-item
 aws dynamodb scan --table-name UserPosts --max-items 1
 
 # Fetch the next iteme-name UserPosts 
