@@ -31,15 +31,13 @@ aws dynamodb scan --table-name UserPosts --page-size 1
 aws dynamodb scan --table-name UserPosts --max-items 1
 #!/bin/bash
 
+aws dynamodb scan --table-name UserPosts --max-items 1
+#!/bin/bash
+
 # Demo Projection Expression
 aws dynamodb scan --table-name UserPosts --projection-expression "user_id, content"
 
 # Demo Filter Expression
-aws dynamodb scan --table-name UserPosts --filter-expression "user_id = :u" --expression-attribute-values '{ ":u": {"S":"john123"}}'
-
-# Page Size demo: will do 1 API call if you have 3 Items
-aws dynamodb scan --table-name UserPosts 
-
 aws dynamodb scan --table-name UserPosts --max-items 1
 #!/bin/bash
 
