@@ -1,6 +1,14 @@
 #!/bin/bash
 
 # Demo Projection Expression
+4
+aws dynamodb scan --table-name UserPosts --max-items 1
+#!/bin/bash
+
+# Demo Projection Expression
+aws dynamodb scan --table-name UserPosts --projection-expression "user_id, content"
+
+# Demo Filter Expression
 aws dynamodb scan --table-name UserPosts --projection-expression "user_id, content"
 
 # Demo Filter Expression
