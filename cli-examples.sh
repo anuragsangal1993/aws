@@ -5,6 +5,15 @@
 # Fetch the next itemn --table-name UserPosts
 # Page Size demo: will do 1 API call if you have 3 Items
 aws dynamodb scan --table-name UserPosts 
+# Fetch the next itemn --table-name UserPosts
+# Page Size demo: will do 1 API call if you have 3 Items
+aws dynamodb scan --table-name UserPosts 
+
+# Will do 3 API calls if you have 3 Items
+aws dynamodb scan --table-name UserPosts --page-size 1
+
+# Max Item demo:
+aws dynamodb scan --table-name UserPosts --max-item
 
 # Will do 3 API calls if you have 3 Items
 aws dynamodb scan --table-name UserPosts --page-size 1
